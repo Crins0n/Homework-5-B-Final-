@@ -8,6 +8,7 @@ void welcome();
 void getBabyWeight(double &);
 void findLowest(double, double, double, double, double);
 void findHighest(double, double, double, double, double);
+double weightAverage(double, double, double, double, double);
 
 int main() {
   double baby1, baby2, baby3, baby4, baby5, averageWeight;
@@ -26,6 +27,8 @@ int main() {
 
   findLowest(baby1, baby2, baby3, baby4, baby5);
   findHighest(baby1, baby2, baby3, baby4, baby5);
+  averageWeight = weightAverage(baby1, baby2, baby3, baby4, baby5);
+  cout << "The average weight of the babies is: " << averageWeight;
 }
 
 void welcome() {
@@ -152,3 +155,8 @@ void findHighest(double high1, double high2, double high3, double high4,
   cout << "\n\n";
   
                  }
+
+double weightAverage (double wA1, double wA2, double wA3, double wA4, double wA5) {
+  return (wA1 + wA2 + wA3 + wA4 + wA5) / 5;
+
+}
