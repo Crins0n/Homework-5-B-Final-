@@ -28,7 +28,7 @@ int main() {
   findLowest(baby1, baby2, baby3, baby4, baby5);
   findHighest(baby1, baby2, baby3, baby4, baby5);
   averageWeight = weightAverage(baby1, baby2, baby3, baby4, baby5);
-  cout << "The average weight of the babies is: " << averageWeight;
+  cout << "The overall babyweight average is: " << averageWeight;
 }
 
 void welcome() {
@@ -101,7 +101,7 @@ void findLowest(double low1, double low2, double low3, double low4,
     }
   }
   if (tie == true)
-    cout << "There is a tie!! No low weight today.";
+    cout << "We have a tie!! No lowest birth weight today.";
   cout << "\n\n";
 }
 
@@ -151,7 +151,7 @@ void findHighest(double high1, double high2, double high3, double high4,
     }
   }
   if (tie == true)
-    cout << "There is a tie!! No high weight today.";
+    cout << "We have a tie!! No highest birth weight today.";
   cout << "\n\n";
   
                  }
