@@ -56,6 +56,7 @@ void findLowest(double low1, double low2, double low3, double low4,
                 double low5) {
   double lowest;
   bool tie = false;
+  cout << std::fixed << std::setprecision(1);
   if (low1 <= low2 && low1 <= low3 && low1 <= low4 && low1 <= low5) {
     lowest = low1;
     if (lowest == low2 || lowest == low3 || lowest == low4 || lowest == low5) {
@@ -105,6 +106,7 @@ void findHighest(double high1, double high2, double high3, double high4,
                  double high5) {
   double highest;
   bool tie = false;
+  cout << std::fixed << std::setprecision(1);
   if (high1 >= high2 && high1 >= high3 && high1 >= high4 && high1 >= high5) {
     highest = high1;
     if (highest == high2 || highest == high3 || highest == high4 || highest == high5) {
